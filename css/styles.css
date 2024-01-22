@@ -1,0 +1,325 @@
+/*Estilos globales*/
+* {
+    font-family: 'Kalnia', serif;
+    font-family: 'Rubik', sans-serif;
+   
+}
+
+a {
+    text-decoration: none;
+}
+/*Fin estilos globales*/
+
+/*Enlaces*/
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+/*Inicio header*/
+.header{
+    height: 100%;
+    width: 100%;
+    background-color: #008b8b; 
+    
+}
+.logo-empresa{
+    width: 5rem;
+    border-radius: 50%;
+    
+}
+
+
+.enlace-color-nav{
+    justify-content: center;
+    align-items: center;
+    font-family: rubik;
+    font-size: 1rem;
+    color: #ffffff; 
+}
+
+.enlace-color-nav:hover{
+    font-size: 1.5rem;
+}
+
+.buscador-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: flex-start;
+    height: 40vp;
+}
+
+.buscador{
+    display: flex;
+    flex-direction: inline-block;
+    padding-left: 0%;
+    padding-right: 0%;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+   justify-content: flex-end;
+    
+}
+
+
+/*Fin header*/
+
+/*INDEX*/
+/*Imagenes*/
+
+.carousel{
+height: auto;
+}
+
+.contenedor-ppal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-ppal{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: double #ff7474 0.25rem;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+.img-index{
+text-align: center;
+display: flex;
+display: block;
+}
+
+/*Headings*/
+.heading1{
+font-family:kelnia ;
+font-size: 3rem;
+color: #ff7474;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+text-align: center;
+margin: 1rem 1rem 1rem 1rem;
+}
+
+.heading2{
+    font-family: rubik;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #008b8b;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.heading3{
+    font-family: rubik;
+    font-size: 1rem;
+    font-weight: 300; 
+    color: rgb(0, 0, 0);
+    display: flex;
+    display: block;
+    justify-content: center;
+    height: 3rem;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 0;
+   text-align: center;
+}
+
+
+/*FIN DEL HEADER*/
+
+ 
+/*PAGINAS INICIA SESION y CREAR CUENTA*/
+
+.inicia-sesion{
+    display: flex;
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 20rem;
+    border: dotted 0.25rem #efd3ab;
+    
+}
+
+.form-inicia-sesion{
+    display: flex;
+    flex-direction: column;
+    justify-content:  center; /*TAMBIEN QUIERO PONER EN FIXED EN LA NAV BAR PERO PASA ALGO RARO*/
+    text-align: center; 
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.iconos-container{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 0.25rem;
+    
+}
+.card{
+    display: flex;
+    display: inline-block;
+    flex-wrap: wrap;
+    text-align: center;
+   
+}
+
+.card-img-top{
+    width: 2rem;
+    height: 2rem;
+    
+}
+
+/*PAGINA PRODUCTOS*/
+
+.titulo-tabla{
+    font-size:large;
+    color: #efd3ab;
+    text-align: center;
+}
+.table1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    font-size: small;
+
+}
+
+/*PAGINA CONTACTO*/
+.logo-contacto{
+    width: 3rem;
+    height: 3rem;
+}
+.mapa{
+    background-color: #efd3ab;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+   
+}
+
+.contactos{
+    border: solid rgb(0, 0, 0) 0.1rem;
+}
+.iframe-mapa{
+    width: 15rem;
+    height: 15rem;
+}
+.dejanos-tu-mensaje{
+    background-color: #efd3ab;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+/*INICIO DEL FOOTER*/
+.footer{
+    background-color:#efd3ab;
+    font-family: rubik;
+    font-size: 1rem;
+    color:#008b8b;
+
+    
+}
+.enlace-color-footer{
+    color:#ff7474;
+}
+
+.enlace-color-footer:hover{
+   font-size: 1.5rem;
+}
+
+.enlaces-footer{
+    margin:0;
+    justify-content: space-evenly;
+}
+
+.rrss-footer{
+    text-align: center;
+}
+.newsletter-footer{
+    text-align: center;
+
+}
+
+.buscador-footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.div-redes-sociales{
+    display: flex;
+    flex-wrap: wrap;
+    display: block;
+    justify-content: center;
+    width: 100%  ;
+}
+
+/*FIN EDL FOOTER*/
+
+
+/*MEDIA QUERY*/
+
+
+@media only screen and (min-width: 600px) {
+    
+    .contenedor-ppal{
+        flex-direction: column;
+    }
+    .heading1{
+        font-size: 3rem;
+        margin: 4rem 4rem 4rem 3rem;
+    }
+    .dejanos-tu-mensaje{
+        flex-direction: column;
+        align-items: center;
+    }
+    .buscador-footer{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 900px){
+
+   .contenedor-ppal{
+        flex-direction: row;
+    }
+    .heading1{
+        font-size: 3rem;
+        margin: 4rem 4rem 4rem 3rem;
+}
+.dejanos-tu-mensaje{
+    flex-direction: column;
+    align-items: center;
+}
+.buscador-footer{
+    flex-direction: row;
+    justify-content: space-around;
+}
+}

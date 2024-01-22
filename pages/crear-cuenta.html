@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DecoHome - Crear Cuenta</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia&family=Rubik:ital,wght@0,300;0,500;1,300&display=swap"
+        rel="stylesheet">
+
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+   
+ <!--Linkeo Bootstrap-->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+ <!--CSS-->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="buscador-header">
+            <img class="logo-empresa" src="/images/logo.jpg" alt="logo-empresa">
+            <form action="/buscar" method="post" class="buscador">
+                <label for="search">Buscar:</label>
+                <input type="text" id="search" name="q" placeholder="Buscar" required>
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+            <ul>
+                <li><a target="_blank" class="enlace-color-nav" href="crear-cuenta.html"> Crear cuenta </a></li>
+                <li><a target="_blank" class="enlace-color-nav" href="iniciar-sesion.html"> Iniciar sesión</a></li>
+                <li><a target="_blank" class="enlace-color-nav" href="/index.html">Inicio</a></li>
+                <li><a target="_blank" class="enlace-color-nav" href="productos.html"> Productos</a></li>
+                <li><a target="_blank" class="enlace-color-nav" href="contacto.html"> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="heading1">Si querés ser parte, registrate</h1>
+    <main>
+        <div class="inicia-sesion">
+            <form action="form.php" method="post" class="form-inicia-sesion">
+                <label for="Nombre"> Nombre </label>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Fulanito">
+                <label for="Apellido"> Apellido </label>
+                <input type="text" name="Apellido" id="Apellido" placeholder="De Tal">
+                <label for="password"> Contraseña </label>
+                <input type="password">
+            </div>
+        </section>
+    </main>
+
+    <div class="iconos-container">
+        <div class="card" style="width: 18rem;">
+            <img src="/images/compra-online.png" class="card-img-top" alt="icono compra online">
+            <div class="card-body">
+              <p class="card-text">Comprá desde la comodidad de tu casa</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="/images/envio-gratis.png" class="card-img-top" alt="icono envio gratis">
+            <div class="card-body">
+              <p class="card-text">Hacemos envíos gratis</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="/images/talleres-virtuales.png" class="card-img-top" alt="icono talleres virtuales">
+            <div class="card-body">
+              <p class="card-text">Talleres a distancia</p>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+            <div class="div-newsletter-footer">
+            <p class="newsletter-footer">Newsletter</p><br>
+            <form action="form3.php" method="post" class="buscador-footer">
+                <label for="Nombre_y_Apellido">Nombre y apellido</label>
+                <input type="text" name="Nombre_y_Apellido" id="Nombre_y_Apellido">
+                <label for="Correo_Electronico">Correo electrónico</label>
+                <input type="email" name="Correo_Electronico" id="Correo_Electronico">
+                <input type="submit" value="Suscribirme">
+            </form>
+        </div>
+        <div class="div-redes-sociales">
+            <p class="rrss-footer">Nuestras redes sociales</p><br>
+            <ul class="enlaces-footer">
+                <li><a target="_blank" class="enlace-color-footer" href="https://facebook.com">Facebook</a></li>
+                <li><a target="_blank" class="enlace-color-footer" href="https://instagram.com">Instagram</a></li>
+                <li><a target="_blank" class="enlace-color-footer" href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>

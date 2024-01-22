@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DecoHome - Contacto</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia&family=Rubik:ital,wght@0,300;0,500;1,300&display=swap"
+        rel="stylesheet">
+
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+   
+ <!--Linkeo Bootstrap-->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="buscador-header">
+            <img class="logo-empresa" src="/images/logo.jpg" alt="logo-empresa">
+            <form action="/buscar" method="post" class="buscador">
+                <label for="search">Buscar:</label>
+                <input type="text" id="search" name="q" placeholder="Buscar" required>
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+            <ul>
+                <li><a target="_blank" class="enlace-color-nav" href="crear-cuenta.html"> Crear cuenta </a></li>
+                <li><a target="_blank" class="enlace-color-nav" href="iniciar-sesion.html"> Iniciar sesión</a></li>
+                <li><a target="_blank" class="enlace-color-nav" href="/index.html">Inicio</a></li>
+                <li><a target="_blank" class="enlace-color-nav" href="productos.html"> Productos</a></li>
+                <li><a target="_blank" class="enlace-color-nav" href="contacto.html"> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <h1 class="heading1">Contactos DecoHome</h1>
+    <h2 class="heading2">Redes sociales</h2>
+    <div class="contactos">
+        <div class="mapa">
+        <img class="logo-contacto" src="/images/whatsapp.png" alt="Logotipo de WhatsApp">
+        <p> 011 54 9 1234 5678</p>
+
+        <img class="logo-contacto" src="/images/gmail.png" alt="Logotipo de mail">
+        <p>decohome@gmail.com</p>
+
+        <img class="logo-contacto" src="/images/maps.png" alt="Logotipo maps">
+        <p>Calle Falsa 123</p>
+        <iframe class="iframe-mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168881863833!2d-58.38414532452472!3d-34.60373445749857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1702932905952!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    <div id="contacto">
+        <form action="form.php" method="post" class="dejanos-tu-mensaje">
+            <label for="Nombre_y_Apellido1">Nombre y Apellido</label>
+            <input type="text" name="Nombre_y_Apellido1" id="Nombre_y_Apellido1" placeholder="Fulanito De Tal">
+            <label for="Correo_Electronico1"> Correo Electrónico</label>
+            <input type="text" name="Correo_Electronico1" id="Correo_Electronico1" placeholder="fulanito@gmail.com">
+            <label for="Telefono"> Teléfono (opcional)</label>
+            <input type="tel" name="Telefono" id="Telefono">
+            <label for="Mensaje"> Contanos cómo podemos ayudarte</label>
+            <textarea name="Mensaje" id="Mensaje" cols="30" rows="10"> Dejanos tu mensaje</textarea>
+            <input type="submit" value="Enviar">
+
+        </form>
+    </div>
+    </div>
+    <div class="iconos-container">
+        <div class="card" style="width: 18rem;">
+            <img src="/images/compra-online.png" class="card-img-top" alt="icono compra online">
+            <div class="card-body">
+              <p class="card-text">Comprá desde la comodidad de tu casa</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="/images/envio-gratis.png" class="card-img-top" alt="icono envio gratis">
+            <div class="card-body">
+              <p class="card-text">Hacemos envíos gratis</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="/images/talleres-virtuales.png" class="card-img-top" alt="icono talleres virtuales">
+            <div class="card-body">
+              <p class="card-text">Talleres a distancia</p>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+            <div class="div-newsletter-footer">
+            <p class="newsletter-footer">Newsletter</p><br>
+            <form action="form3.php" method="post" class="buscador-footer">
+                <label for="Nombre_y_Apellido">Nombre y apellido</label>
+                <input type="text" name="Nombre_y_Apellido" id="Nombre_y_Apellido">
+                <label for="Correo_Electronico">Correo electrónico</label>
+                <input type="email" name="Correo_Electronico" id="Correo_Electronico">
+                <input type="submit" value="Suscribirme">
+            </form>
+        </div>
+        <div class="div-redes-sociales">
+            <p class="rrss-footer">Nuestras redes sociales</p><br>
+            <ul class="enlaces-footer">
+                <li><a target="_blank" class="enlace-color-footer" href="https://facebook.com">Facebook</a></li>
+                <li><a target="_blank" class="enlace-color-footer" href="https://instagram.com">Instagram</a></li>
+                <li><a target="_blank" class="enlace-color-footer" href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
