@@ -18,6 +18,8 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 100%;
+    padding: 0;
 
 }
 
@@ -53,20 +55,19 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    align-items: flex-start;
-    height: 40vp;
+    
 }
 
 .buscador {
     display: flex;
-    flex-direction: inline-block;
+    flex-direction: row;
     padding-left: 0%;
     padding-right: 0%;
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
     justify-content: flex-end;
-
+    margin-bottom: 1rem;
 }
 
 
@@ -270,15 +271,18 @@ ul {
 
 .newsletter-footer {
     text-align: center;
-
+    margin: 0;
 }
 
 .buscador-footer {
     display: flex;
-    flex-direction: column;
     text-align: center;
     margin-bottom: 1rem;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    flex-direction: column;
 }
 
 .div-redes-sociales {
@@ -319,6 +323,7 @@ ul {
 
 @media only screen and (min-width: 900px) {
 
+    
     .contenedor-ppal {
         flex-direction: row;
     }
