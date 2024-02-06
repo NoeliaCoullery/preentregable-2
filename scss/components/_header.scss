@@ -1,0 +1,47 @@
+.header {
+    @extend %medidas;
+    background-image: linear-gradient(to top ,#008b8b,#efd3ab);
+
+    .buscador-header {
+        @extend %flex;
+
+        width: map-get($medidas,ancho);
+        font-family: $fuenteSecundaria;
+        
+        .logo-empresa {
+            width: 5rem;
+            border-radius: 50%;
+        
+        }
+
+        .buscador {
+            @extend %flex;
+            @extend %medidas;
+            padding-left: 0%;
+            padding-right: 0%;
+            justify-content: flex-end;
+            margin-bottom: 1rem;
+            font-family: $fuenteSecundaria;
+        }    
+        
+    }
+    
+    .enlace-color-nav {
+        justify-content: center;
+        align-items: center;
+        font-family: $fuenteSecundaria;
+        font-size: 1rem;
+        color: nth($colores,5);
+    
+        &:hover{
+            font-size: 1.25rem;
+        }
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+@import "./base/variables";
+@import "./base/listas";
+@import "./utilities/extends";
+@import "./utilities/maps";
+@import "./components/header";
+@import "./components/main";
+@import "./components/footer";
+
+
+/*Estilos globales*/
+*{
+    font-family: 'Kalnia', serif;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Fin estilos globales*/
+
+/*Enlaces*/
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+
+}
+
+// Animaciones
+@keyframes animacion-registro{
+    0%, 100%{ transform: scale(1);
+
+    }
+    50%{
+        transform: scale(1.1);
+    }
+
+}

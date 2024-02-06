@@ -1,0 +1,236 @@
+//Inicio
+
+.carousel {
+    height: map-get($medidas,alto);
+}
+
+.contenedor-ppal {
+    @extend %flex2;
+    justify-content: space-between;
+
+    .img-index {
+        text-align: center;
+        display: block;
+
+        .img-ppal {
+            width: map-get($medidas,ancho);
+            max-width: 300px;
+            height: auto;
+            border: double nth($colores,2) 0.25rem;
+            align-items: center;
+            margin-top: 0;
+            margin-bottom: 3rem;
+
+            transition: transform .4s;
+            
+            &:hover{
+            transform:scale(1.1)
+            }
+        }
+        
+    }
+
+    
+}
+
+//Paginas Iniciar sesion y crear cuenta
+
+.inicia-sesion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 20rem;
+    border: dotted 0.25rem nth($colores,3);
+
+
+    .form-inicia-sesion {
+        @extend %flex2;
+        margin-top: 5rem;
+        font-size: $fuenteSecundaria;
+    }
+    
+}
+
+
+.iconos-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.25rem;
+ 
+    .card {
+        display: inline-block;
+        flex-wrap: wrap;
+        text-align: center;
+        
+        transition: transform .4s;
+            
+            &:hover{
+            transform:scale(1.1)
+        }
+
+
+
+            .card-text{
+                font-family: $fuentePrincipal;
+                font-size: large;
+            }
+    
+    }
+
+    .card-img-top {
+        width: 2rem;
+        height: 2rem;
+    
+    }
+
+}
+
+
+//Pagina productos
+
+.table1 {
+    width: map-get($medidas,ancho);
+    @extend %flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    font-size: small;
+
+    .titulo-tabla {
+        font-size: large;
+        color: nth($colores,2);
+        text-align: center;
+        font-family: $fuentePrincipal;
+        font-size: medium;
+
+    }
+
+}
+
+//Pagina contacto
+
+.contactos {
+    border: solid rgb(0, 0, 0) 0.1rem;
+
+    .mapa {
+        background-color: nth($colores,3);
+        justify-content: space-around;
+        display: flex;
+    }
+        .para-justificar{
+            display: inline-block;
+            text-align: center;
+            flex-wrap: wrap;
+            font-family: $fuenteSecundaria;
+            font-size: 1rem;
+            
+            animation-name: animacion-registro;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        
+        }
+            .logo-contacto {
+             width: 3rem;
+             height: 3rem;
+
+            }
+        
+}
+
+
+.iframe-mapa {
+    @extend %medidas;
+    background-color: nth($colores,3);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.dejanos-tu-mensaje {
+    background-color:nth($colores,3);
+    @extend %flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $fuenteSecundaria;
+
+}
+
+//Headings
+
+.heading1 {
+    font-family: $fuentePrincipal;
+    font-weight:bold ;
+    font-size: 3rem;
+    color: nth($colores,2);
+    text-align: center;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.heading2 {
+    font-family: $fuenteSecundaria;
+    font-size: 2rem;
+    color: nth($colores,1);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.heading3 {
+    font-family: $fuenteSecundaria;
+    font-size: 1rem;
+    font-weight: 300;
+    color: nth($colores,4);
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+//Media Query
+
+@media only screen and (min-width: 600px) {
+    .dejanos-tu-mensaje {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-ppal {
+        flex-direction: column;
+    }
+
+    .heading1 {
+        font-size: 3rem;
+        margin: 4rem 4rem 4rem 3rem;
+    }
+
+    .table1{
+        font-size: 1rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+ 
+    .dejanos-tu-mensaje {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .contenedor-ppal {
+        flex-direction: row;
+    }
+
+    .heading1 {
+        font-size: 3rem;
+        margin: 4rem 4rem 4rem 3rem;
+    }
+
+    .table1{
+        font-size: 1rem;
+        margin-bottom: 4rem;
+    }
+}
+
